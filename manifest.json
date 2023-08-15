@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Pokemon",
+  "version": "1.0",
+
+  "description": "Shows pokemon timer",
+
+  "icons": {
+    "48": "icons/pokeball.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": ["pokemon.js"]
+    }
+  ],
+
+  "permissions": [
+    "https://poketwitch.bframework.de/info/events/spawn_cooldown/",
+    "tabs"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pokemon@marijnregterschot.nl"
+    }
+  }
+  
+}
