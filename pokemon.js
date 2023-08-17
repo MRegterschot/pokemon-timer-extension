@@ -10,6 +10,7 @@ let guiDiv;
 let guiOpen = false;
 let guiTimer;
 let guiImage;
+let guiImageTimer;
 
 let currDisplay = "timer";
 
@@ -92,12 +93,14 @@ function addGui() {
   guiHeader.innerHTML += `
     <div class="gui-header-title" id="gui-image-title" style="display: none; flex-direction: column; align-items: center; justify-content: center; height: 100%; font-weight: bold;">
       <img src="${backend_url}image" id="gui-image" />
+      <p id="gui-image-timer">01:30</p>
     </div>
   `;
 
   document.body.appendChild(guiDiv);
   guiTimer = document.getElementById("gui-timer");
   guiImage = document.getElementById("gui-image");
+  guiImageTimer = document.getElementById("gui-image-timer");
   guiTimerTitle = document.getElementById("gui-timer-title");
   guiImageTitle = document.getElementById("gui-image-title");
 }
@@ -162,6 +165,10 @@ function mainloop() {
 
         if (next_spawn > 0) {
           if (next_spawn > 810) {
+            let time = next_spawn - 810;
+            let minutesImage = Math.floor(time / 60);
+            let secondsImage = time - minutesImage * 60;
+            guiImageTimer.innerHTML = str_pad_left(minutesImage, "0", 2) + ":" + str_pad_left(secondsImage, "0", 2);;
             currDisplay = "image";
           } else {
             currDisplay = "timer";
