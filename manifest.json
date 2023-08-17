@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Pokemon",
-  "version": "1.0",
+  "name": "Pokemon Timer",
+  "version": "1.1",
 
-  "description": "Shows pokemon timer",
+  "description": "Shows pokemon timer under twitch chat.",
 
   "icons": {
     "48": "icons/pokeball.png"
@@ -17,7 +17,7 @@
   ],
 
   "permissions": [
-    "https://poketwitch.bframework.de/info/events/spawn_cooldown/",
+    "https://pokemonapi.dikkeboktor.nl/*",
     "tabs"
   ],
 
