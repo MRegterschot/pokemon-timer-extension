@@ -156,6 +156,8 @@ function mainloop() {
             guiTimerTitle.style.display = "none";
             guiImageTitle.style.display = "flex";
           }
+        } else {
+          guiDiv.style.display = "none";
         }
 
         if (next_spawn > 0) {
@@ -170,7 +172,7 @@ function mainloop() {
           }, 1000);
         } else {
           setTimeout(function () {
-            guiImage.src = backend_url + "image";
+            guiImage.src = backend_url + "image?" + new Date().getTime();
             mainloop();
           }, 2000);
         }

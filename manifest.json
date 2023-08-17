@@ -18,7 +18,8 @@
 
   "permissions": [
     "https://pokemonapi.dikkeboktor.nl/*",
-    "tabs"
+    "tabs",
+    "http://localhost:13000/*"
   ],
 
   "browser_specific_settings": {
