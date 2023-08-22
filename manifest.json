@@ -1,17 +1,19 @@
 {
   "manifest_version": 2,
-  "name": "Pokemon Timer",
+  "name": "Pokemon Game Menu",
   "version": "1.1",
 
-  "description": "Shows pokemon timer under twitch chat.",
+  "description": "Menu for Pokemon Game",
 
   "icons": {
-    "48": "icons/pokeball.png"
+    "48": "icons/pokeball.svg",
+    "96": "icons/pokeball.svg",
+    "128": "icons/pokeball.svg"
   },
 
   "content_scripts": [
     {
-      "matches": ["https://www.twitch.tv/*"],
+      "matches": ["https://*.twitch.tv/*"],
       "js": ["pokemon.js"]
     }
   ],
@@ -26,6 +28,9 @@
     "gecko": {
       "id": "pokemon@marijnregterschot.nl"
     }
+  },
+
+  "background": {
+    "page": "background.html"
   }
-  
 }

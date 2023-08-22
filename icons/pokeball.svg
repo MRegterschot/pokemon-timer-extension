@@ -1,0 +1,55 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" id="Pokeball" xmlns="http://www.w3.org/2000/svg" width="2000" height="2000" viewBox="0 0 2000 2000">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #e34242;
+      }
+
+      .cls-3 {
+        opacity: 0.2;
+      }
+
+      .cls-4, .cls-7 {
+        fill: none;
+      }
+
+      .cls-4, .cls-6 {
+        stroke: #343434;
+      }
+
+      .cls-4 {
+        stroke-width: 110px;
+      }
+
+      .cls-5 {
+        fill: #343434;
+      }
+
+      .cls-6 {
+        stroke-width: 85.306px;
+      }
+
+      .cls-7 {
+        stroke: #a7a7a7;
+        stroke-width: 17.96px;
+      }
+    </style>
+  </defs>
+  <path id="White_Half" data-name="White Half" class="cls-1" d="M1999,1000c0,552.27-447.48,999.97-999.484,999.97S0.031,1552.27.031,1000"/>
+  <path id="Blue_Half" data-name="Blue Half" class="cls-2" d="M0.031,1000C0.031,447.733,447.516.031,999.516,0.031S1999,447.733,1999,1000"/>
+  <path id="Shadow" class="cls-3" d="M1021.5,0C-299.191-5.548,621.541,2000,999.516,2000,448.9,1997.1.042,1543.94,0,1000-0.042,447.763,462.532,0,1021.5,0Z"/>
+  <path id="Ball" class="cls-4" d="M999.547,55.031c521.653,0,944.543,423.091,944.543,945s-422.89,945-944.543,945S55,1521.94,55,1000.03,477.891,55.031,999.547,55.031Z"/>
+  <path id="Middle_Ring" data-name="Middle Ring" class="cls-5" d="M45.54,950.219H1954.46v100.5H45.54v-100.5Z"/>
+  <g id="Middle_Ball" data-name="Middle Ball">
+    <path id="Middle_Ball-2" data-name="Middle Ball" class="cls-6" d="M999.516,704.594c163.064,0,295.264,132.258,295.264,295.406s-132.2,295.41-295.264,295.41S704.252,1163.15,704.252,1000,836.446,704.594,999.516,704.594Z"/>
+    <circle id="Bevel" class="cls-7" cx="999.517" cy="1000" r="159.923"/>
+  </g>
+</svg>
